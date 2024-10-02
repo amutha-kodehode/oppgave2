@@ -274,6 +274,7 @@ const userData = {
 };
 
 const checkInstance = (receivedObj) => {
+  //her bruker vi typeof syntax for å finne type av input
   if (typeof receivedObj === "string") return `😎 ${receivedObj} 😎`;
   else if (typeof receivedObj === "number") return `😎 ${receivedObj * 2} 😎`;
   else if (typeof receivedObj === "boolean") {
