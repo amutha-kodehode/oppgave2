@@ -23,7 +23,7 @@ let testNr1 = 5;
 let testNr2 = 44;
 let testNr3 = 77;
 const oddEven = (testNr) => {
-  // sjekk hvis tall delt ved 2 resultat i null 
+  // sjekk hvis tall delt ved 2 resultat i null
   console.log(testNr % 2 === 0 ? "Even" : "Odd");
 };
 console.log("Test sample 1: " + testNr1);
@@ -33,7 +33,6 @@ oddEven(testNr2);
 console.log("Test sample 3: " + testNr3);
 oddEven(testNr3);
 
-  
 /******************************************************************************
 2.
 
@@ -50,15 +49,14 @@ console.log("Skrive ut svar for andre funksjon nedenfor");
 console.log("---------------------------------------------");
 const textIp1 = "This is my test string";
 let textIp2 = "My name in uppercase: Amutha";
-console.log("Sample 1 " +textIp1);
+console.log("Sample 1 " + textIp1);
 console.log(upperCaseChange(textIp1));
-console.log("Sample 2 " +textIp2);
-console.log(upperCaseChange(textIp2);
-function upperCaseChange(stringIp)
-  {
-    //her vi bytter tekst til uppercase ved bruk av innbygde method
-    return stringIp.toUpperCase();
-  }
+console.log("Sample 2 " + textIp2);
+console.log(upperCaseChange(textIp2));
+function upperCaseChange(stringIp) {
+  //her vi bytter tekst til uppercase ved bruk av innbygde method
+  return stringIp.toUpperCase();
+}
 /******************************************************************************
 3.
 
@@ -145,15 +143,23 @@ const removeFirstAndLast = (stringArray) => {
   stringArray.shift();
   // her bruker vi unnbygde methoder shift og pop for å fjerne først og ende order in string array
   return stringArray;
-}
-let array1 = ["Red", "Green", "Blue", "Yellow"] 
-console.log("Sample 1: " +array1);
+};
+let array1 = ["Red", "Green", "Blue", "Yellow"];
+console.log("Sample 1: " + array1);
 console.log(removeFirstAndLast(array1));
-let array2 =  ["One", "Two", "Three", "Four", "Five", "Six"] 
-console.log("Sample 2: " +array2);
+let array2 = ["One", "Two", "Three", "Four", "Five", "Six"];
+console.log("Sample 2: " + array2);
 console.log(removeFirstAndLast(array2));
-let array3 = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-console.log("Sample 3: " +array3);
+let array3 = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+console.log("Sample 3: " + array3);
 console.log(removeFirstAndLast(array3));
 /******************************************************************************
 5.
@@ -203,20 +209,28 @@ Use array methods to do the following:
 
 ******************************************************************************/
 
-const heroes = ["Spider-Man", "Thor", "Hulk", "Doctor Strange", "Iron Man", "Black Widow"]
+const heroes = [
+  "Spider-Man",
+  "Thor",
+  "Hulk",
+  "Doctor Strange",
+  "Iron Man",
+  "Black Widow",
+];
 
 console.log("---------------------------------------------");
 console.log("Skrive ut svar for sjette funksjon nedenfor");
 console.log("---------------------------------------------");
-
+console.log("Inital array " + heroes);
 heroes.shift(); // fjerne første item i array
 console.log("After removing first item \n" + heroes);
 heroes.splice(2, 1, "Skrull");
 console.log("After replacing Doctor with Scrull \n" + heroes);
 heroes.splice(0, 2, "Captain America");
 console.log("After removing Thor, Hulk and adding Captain America \n" + heroes);
-console.log(heroes.join("💪"));
-
+console.log(
+  "Adding icon between and converting to string\n" + heroes.join("💪")
+);
 
 /******************************************************************************
 7.
@@ -282,7 +296,6 @@ console.log(checkInstance(testCase5));
 console.log(checkInstance(testCase6));
 console.log(checkInstance(testCase7));
 
-
 /******************************************************************************
 8.
 
@@ -329,4 +342,3 @@ arrayStringGame(arrayIp2, "Four");
 console.log("After checking not present value Four \n" + arrayIp2);
 arrayStringGame(arrayIp2, "One");
 console.log("After checking present value One \n" + arrayIp2);
-  
