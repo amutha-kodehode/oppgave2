@@ -280,7 +280,7 @@ const checkInstance = (receivedObj) => {
   else if (typeof receivedObj === "boolean") {
     if (receivedObj) return "😎Yeah😎";
     else return "😎Chill😎";
-  } else return "Primitive values only";
+  } else return "😎Primitive values only😎";
 };
 let testCase1 = "Checking for String";
 let testCase2 = 10;
